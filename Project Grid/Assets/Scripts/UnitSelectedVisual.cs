@@ -30,12 +30,21 @@ public class UnitSelectedVisual : MonoBehaviour
     {
         if (UnitActionSystem.Instance.GetSeletedUnit() == unit)
         {
-            meshRenderer.enabled = true;
+            Show();
         }
         else
         {
-            meshRenderer.enabled = false;
+            Hide();
         }
     }
 
+    private void Show()
+    {
+        meshRenderer.enabled = true;
+    }
+
+    private void Hide()
+    {
+        meshRenderer.enabled = false;
+    }
 }

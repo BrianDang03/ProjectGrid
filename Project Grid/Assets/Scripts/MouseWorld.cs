@@ -9,6 +9,12 @@ public class MouseWorld : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance != null)
+        {
+            Debug.Log("There's more than on UnitActionSystem! " + transform + " - " + Instance);
+            Destroy(gameObject);
+            return;
+        }
         Instance = this;
     }
 
