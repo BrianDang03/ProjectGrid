@@ -11,13 +11,13 @@ public class Unit : MonoBehaviour
     [SerializeField] float rotationSpeed = 5f;
     private Vector3 targetPosition;
 
+    private void Awake()
+    {
+        targetPosition = this.transform.position;
+    }
+
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Move(MouseWorld.GetPosition());
-        }
-
         float stoppingDistance = .01f;
         if (Vector3.Distance(targetPosition, transform.position) > stoppingDistance)
         {
@@ -32,7 +32,7 @@ public class Unit : MonoBehaviour
         }
     }
 
-    private void Move(Vector3 aTargetPosition)
+    public void Move(Vector3 aTargetPosition)
     {
         this.targetPosition = aTargetPosition;
     }
