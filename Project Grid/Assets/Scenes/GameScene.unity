@@ -725,6 +725,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18272475da83d254b8c6dc5d5d38b680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridDebugObjectPrefab: {fileID: 1481951759058905386, guid: f999363cc80a2c24bad1764797b9099e,
+    type: 3}
 --- !u!4 &1158447601
 Transform:
   m_ObjectHideFlags: 0
@@ -830,6 +832,6 @@ SceneRoots:
   - {fileID: 781989693}
   - {fileID: 1080021595}
   - {fileID: 138261450}
+  - {fileID: 1158447601}
   - {fileID: 2394410532028031285}
   - {fileID: 448974489}
-  - {fileID: 1158447601}
