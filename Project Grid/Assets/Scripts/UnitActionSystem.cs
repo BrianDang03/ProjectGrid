@@ -33,7 +33,7 @@ public class UnitActionSystem : MonoBehaviour
                 return;
             }
             
-            seletedUnit.Move(MouseWorld.GetPosition());
+            seletedUnit.GetMoveAction().Move(MouseWorld.GetPosition());
         }
     }
 
